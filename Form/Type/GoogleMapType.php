@@ -95,17 +95,17 @@ class GoogleMapType extends AbstractType
         $view->vars['include_gmaps_js'] = $options['include_gmaps_js'];
     }
 
-    public function getParent()
+    public function getParent(): string
     {
         return FormType::class;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'oh_google_maps';
     }
 
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'oh_google_maps';
     }
